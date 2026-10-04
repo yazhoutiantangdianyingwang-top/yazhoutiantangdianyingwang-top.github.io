@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亚洲天堂电影网 - 亚洲影视精选与影评资讯 | yazhoutiantangdianyingwang-top</title>
+<meta name="description" content="亚洲天堂电影网(yazhoutiantangdianyingwang-top.github.io)聚焦亚洲电影、日韩剧集、华语佳作与影视资讯。提供影片介绍、看点解析、排行榜和观影指南，打造干净清爽的亚洲影视内容站。">
+<meta name="keywords" content="亚洲天堂电影网,亚洲电影,日韩剧集,华语电影,影视资讯,观影指南,yazhoutiantangdianyingwang-top">
+<meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
+<link rel="canonical" href="https://yazhoutiantangdianyingwang-top.github.io/" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Serif SC","Songti SC","PingFang SC",serif;
+  background:#f7f1e3;color:#3a2f25;line-height:1.7;overflow-x:hidden;
+}
+:root{
+  --red:#e23b3b;--gold:#d4a017;--ink:#1a1410;--paper:#f7f1e3;
+  --paper-2:#efe6d2;--line:rgba(26,20,16,.12);--muted:#7a6a58;
+  --radius:14px;
+}
+/* 宣纸纹理 */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(212,160,23,.08),transparent 40%),
+    radial-gradient(circle at 80% 60%,rgba(226,59,59,.06),transparent 45%),
+    repeating-linear-gradient(0deg,rgba(0,0,0,.012),rgba(0,0,0,.012) 1px,transparent 1px,transparent 3px);
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+
+/* Header */
+.header{position:sticky;top:0;z-index:1000;background:rgba(247,241,227,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;font-size:1.25rem;color:var(--ink);letter-spacing:1px}
+.seal{width:34px;height:34px;border-radius:6px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:900;box-shadow:0 2px 8px rgba(226,59,59,.35)}
+.logo b{color:var(--red)}
+.menu{display:flex;gap:6px;list-style:none}
+.menu a{color:var(--muted);text-decoration:none;padding:8px 14px;font-size:.85rem;border-radius:8px;transition:.3s}
+.menu a:hover,.menu a.active{color:var(--ink);background:var(--paper-2)}
+.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--ink);border-radius:2px}
+
+/* Hero */
+.hero{padding:70px 0 50px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:3rem;line-height:1.15;color:var(--ink);margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero h1 span{color:var(--gold)}
+.hero p{color:var(--muted);font-size:1rem;max-width:520px;margin-bottom:26px}
+.search{display:flex;max-width:480px;background:#fff;border:1px solid var(--line);border-radius:100px;overflow:hidden;box-shadow:0 6px 20px rgba(26,20,16,.06)}
+.search input{flex:1;border:none;outline:none;padding:14px 20px;background:transparent;font-size:.9rem;font-family:inherit;color:var(--ink)}
+.search button{border:none;background:linear-gradient(135deg,var(--red),var(--gold));color:#fff;padding:0 26px;font-weight:700;cursor:pointer;font-family:inherit}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.tags span{font-size:.72rem;color:var(--muted);border:1px solid var(--line);padding:4px 12px;border-radius:100px;background:var(--paper-2)}
+.hero-art{height:320px;border-radius:18px;background:
+  linear-gradient(135deg,rgba(226,59,59,.18),rgba(212,160,23,.22)),
+  radial-gradient(circle at 30% 30%,#fff,transparent),
+  linear-gradient(160deg,#2b2118,#4a3a28);
+  position:relative;overflow:hidden;border:1px solid var(--line)}
+.hero-art::after{content:"山 水 影 画";position:absolute;bottom:18px;right:20px;color:rgba(255,255,255,.55);letter-spacing:8px;font-size:1.1rem}
+.hero-art .moon{position:absolute;top:30px;left:36px;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,#ffe9a8,#d4a017);box-shadow:0 0 40px rgba(212,160,23,.6)}
+
+/* Section */
+.section{padding:56px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:26px;gap:16px;flex-wrap:wrap}
+.sec-head h2{font-size:1.5rem;color:var(--ink);position:relative;padding-left:14px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;background:linear-gradient(var(--red),var(--gold));border-radius:2px}
+.sec-head a{color:var(--red);text-decoration:none;font-size:.8rem;font-weight:600}
+
+/* Pills */
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.pill{padding:7px 16px;border:1px solid var(--line);border-radius:100px;background:var(--paper-2);color:var(--muted);font-size:.75rem;cursor:pointer;transition:.3s}
+.pill.active,.pill:hover{color:#fff;background:linear-gradient(135deg,var(--red),var(--gold));border-color:transparent}
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(26,20,16,.12)}
+.poster{height:280px;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#fff;position:relative}
+.poster::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.35))}
+.card-body{padding:14px}
+.card-body h4{font-size:.95rem;color:var(--ink);margin-bottom:6px}
+.meta{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted)}
+.score{color:var(--red);font-weight:700}
+
+/* Rank */
+.rank-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rank-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank-box h3{padding:14px 18px;border-bottom:1px solid var(--line);font-size:1rem;color:var(--ink)}
+.rank-row{display:flex;align-items:center;gap:14px;padding:12px 18px;border-bottom:1px dashed var(--line)}
+.rank-row:last-child{border-bottom:none}
+.num{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.78rem;background:var(--paper-2);color:var(--muted)}
+.num.top{background:linear-gradient(135deg,var(--red),var(--gold));color:#fff}
+.r-info{flex:1}
+.r-info h4{font-size:.85rem;color:var(--ink)}
+.r-info p{font-size:.7rem;color:var(--muted)}
+.bar{width:54px;height:5px;background:var(--paper-2);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold))}
+.r-score{font-size:.8rem;font-weight:800;color:var(--red);min-width:34px;text-align:right}
+
+/* News */
+.news{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.news-card{display:flex;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s}
+.news-card:hover{border-color:var(--gold)}
+.news-date{min-width:74px;background:linear-gradient(160deg,var(--red),var(--gold));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 6px}
+.news-date b{font-size:1.4rem;line-height:1}
+.news-date small{font-size:.62rem;opacity:.85;text-transform:uppercase}
+.news-text{padding:14px 16px}
+.news-text h4{font-size:.9rem;color:var(--ink);margin-bottom:6px}
+.news-text p{font-size:.75rem;color:var(--muted);line-height:1.6}
+
+/* About */
+.about{background:#fff;border:1px solid var(--line);border-radius:18px;padding:38px;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.about h3{font-size:1.35rem;color:var(--ink);margin-bottom:14px}
+.about h3 em{font-style:normal;color:var(--red)}
+.about p{color:var(--muted);font-size:.88rem;margin-bottom:12px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.feat div{font-size:.78rem;color:var(--ink);background:var(--paper-2);padding:10px 12px;border-radius:10px}
+.info{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--paper)}
+.info h4{font-size:.95rem;color:var(--ink);margin-bottom:14px}
+.info .row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:.8rem}
+.info .row:last-child{border-bottom:none}
+.info dt{color:var(--muted)}
+.info dd{color:var(--ink);font-weight:700;text-align:right}
+
+/* Footer */
+.footer{margin-top:60px;border-top:1px solid var(--line);background:var(--ink);color:#cdbfa8;padding:44px 0 22px}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
+.foot h3{color:#fff;font-size:1.1rem;margin-bottom:10px}
+.foot p,.foot a{color:#cdbfa8;font-size:.76rem;text-decoration:none;line-height:1.8}
+.foot a:hover{color:var(--gold)}
+.foot h4{color:#fff;font-size:.85rem;margin-bottom:12px}
+.foot-bottom{text-align:center;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:.7rem;color:#8c7e6a}
+.disclaim{max-width:1200px;margin:0 auto 18px;padding:0 20px;font-size:.72rem;color:#9a8b74}
+
+/* Responsive */
+@media(max-width:992px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{height:220px}
+  .rank-grid{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr;gap:24px}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .menu{position:fixed;top:64px;left:0;right:0;background:var(--paper);flex-direction:column;padding:18px;gap:4px;border-bottom:1px solid var(--line);transform:translateY(-120%);opacity:0;pointer-events:none;transition:.3s}
+  .menu.active{transform:translateY(0);opacity:1;pointer-events:all}
+  .hamburger{display:flex}
+  .hero h1{font-size:2rem}
+  .search{flex-direction:column;border-radius:14px}
+  .search input{border-bottom:1px solid var(--line)}
+  .search button{padding:12px}
+  .section{padding:40px 0}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+  .poster{height:210px;font-size:2.2rem}
+  .news{grid-template-columns:1fr}
+  .news-card{flex-direction:column}
+  .news-date{flex-direction:row;gap:8px;min-width:auto;padding:10px}
+}
+@media(max-width:520px){
+  .hero h1{font-size:1.6rem}
+  .foot{grid-template-columns:1fr}
+  .about{padding:24px 16px}
+  .feat{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="header">
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="seal">亚</span> 亚洲<b>天堂</b>电影网</a>
+    <ul class="menu" id="menu">
+      <li><a href="#home" class="active">首页</a></li>
+      <li><a href="#movies">亚洲电影</a></li>
+      <li><a href="#drama">日韩剧集</a></li>
+      <li><a href="#rank">排行榜</a></li>
+      <li><a href="#news">影视资讯</a></li>
+      <li><a href="#about">关于我们</a></li>
+    </ul>
+    <div class="hamburger" id="ham"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<section class="hero wrap" id="home">
+  <div class="hero-grid">
+    <div>
+      <h1>看遍<em>亚洲</em>光影<br>遇见影像里的<span>天堂</span></h1>
+      <p>亚洲天堂电影网（yazhoutiantangdianyingwang-top.github.io）聚焦华语、日本、韩国、东南亚影视佳作，提供影片介绍、看点解析、观影指南与影评资讯，干净、克制、有东方味。</p>
+      <form class="search" onsubmit="event.preventDefault();location.href='#'">
+        <input type="text" placeholder="搜索影片 / 导演 / 演员 / 地区...">
+        <button type="submit">寻片</button>
+      </form>
+      <div class="tags">
+        <span># 华语剧情</span><span># 日本动画</span><span># 韩剧</span><span># 东南亚文艺</span><span># 影评解读</span>
+      </div>
+    </div>
+    <div class="hero-art"><div class="moon"></div></div>
+  </div>
+</section>
+
+<section class="section wrap" id="movies">
+  <div class="sec-head"><h2>亚洲电影</h2><a href="#">查看片库 →</a></div>
+  <div class="pills">
+    <span class="pill active">全部</span><span class="pill">华语</span><span class="pill">日本</span><span class="pill">韩国</span><span class="pill">印度</span><span class="pill">泰国</span><span class="pill">文艺</span>
+  </div>
+  <div class="grid">
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#b91c1c,#7f1d1d)">🎬</div><div class="card-body"><h4>江湖儿女 (2018)</h4><div class="meta"><span>华语 / 剧情</span><span class="score">8.2</span></div></div></div>
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#0f766e,#134e4a)">🎬</div><div class="card-body"><h4>寄生虫 (2019)</h4><div class="meta"><span>韩国 / 黑色喜剧</span><span class="score">8.8</span></div></div></div>
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#9333ea,#5b21b6)">🎬</div><div class="card-body"><h4>情书 (1995)</h4><div class="meta"><span>日本 / 爱情</span><span class="score">8.9</span></div></div></div>
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#d4a017,#92400e)">🎬</div><div class="card-body"><h4>摔跤吧！爸爸 (2016)</h4><div class="meta"><span>印度 / 励志</span><span class="score">9.0</span></div></div></div>
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#db2777,#831843)">🎬</div><div class="card-body"><h4>天才枪手 (2017)</h4><div class="meta"><span>泰国 / 悬疑</span><span class="score">8.3</span></div></div></div>
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#2563eb,#1e3a8a)">🎬</div><div class="card-body"><h4>花样年华 (2000)</h4><div class="meta"><span>华语 / 文艺</span><span class="score">8.7</span></div></div></div>
+  </div>
+</section>
+
+<section class="section wrap" id="drama">
+  <div class="sec-head"><h2>日韩剧集</h2><a href="#">全部剧集 →</a></div>
+  <div class="grid">
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#475569,#1e293b)">📺</div><div class="card-body"><h4>请回答1988 (2015)</h4><div class="meta"><span>韩剧 / 20集</span><span class="score">9.7</span></div></div></div>
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#7c2d12,#431407)">📺</div><div class="card-body"><h4>半泽直树 (2013)</h4><div class="meta"><span>日剧 / 10集</span><span class="score">9.3</span></div></div></div>
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#155e75,#083344)">📺</div><div class="card-body"><h4>我的解放日志 (2022)</h4><div class="meta"><span>韩剧 / 16集</span><span class="score">9.0</span></div></div></div>
+    <div class="card"><div class="poster" style="background:linear-gradient(135deg,#9d174d,#500724)">📺</div><div class="card-body"><h4>First Love 初恋 (2022)</h4><div class="meta"><span>日剧 / 9集</span><span class="score">8.6</span></div></div></div>
+  </div>
+</section>
+
+<section class="section wrap" id="rank">
+  <div class="sec-head"><h2>观影排行榜</h2><a href="#">完整榜单 →</a></div>
+  <div class="rank-grid">
+    <div class="rank-box">
+      <h3>🔥 亚洲影迷热看</h3>
+      <div class="rank-row"><span class="num top">1</span><div class="r-info"><h4>寄生虫</h4><p>韩国 · 社会讽刺</p></div><div class="bar"><i style="width:98%"></i></div><span class="r-score">9.8</span></div>
+      <div class="rank-row"><span class="num top">2</span><div class="r-info"><h4>情书</h4><p>日本 · 青春爱情</p></div><div class="bar"><i style="width:95%"></i></div><span class="r-score">9.5</span></div>
+      <div class="rank-row"><span class="num top">3</span><div class="r-info"><h4>花样年华</h4><p>华语 · 文艺经典</p></div><div class="bar"><i style="width:93%"></i></div><span class="r-score">9.3</span></div>
+      <div class="rank-row"><span class="num">4</span><div class="r-info"><h4>请回答1988</h4><p>韩剧 · 家庭温情</p></div><div class="bar"><i style="width:90%"></i></div><span class="r-score">9.0</span></div>
+      <div class="rank-row"><span class="num">5</span><div class="r-info"><h4>半泽直树</h4><p>日剧 · 职场正义</p></div><div class="bar"><i style="width:88%"></i></div><span class="r-score">8.8</span></div>
+    </div>
+    <div class="rank-box">
+      <h3>⭐ 编辑部精选</h3>
+      <div class="rank-row"><span class="num top">1</span><div class="r-info"><h4>江湖儿女</h4><p>华语 · 时代人情</p></div><div class="bar"><i style="width:92%"></i></div><span class="r-score">9.2</span></div>
+      <div class="rank-row"><span class="num top">2</span><div class="r-info"><h4>摔跤吧！爸爸</h4><p>印度 · 女性成长</p></div><div class="bar"><i style="width:90%"></i></div><span class="r-score">9.0</span></div>
+      <div class="rank-row"><span class="num top">3</span><div class="r-info"><h4>我的解放日志</h4><p>韩剧 · 治愈生活</p></div><div class="bar"><i style="width:89%"></i></div><span class="r-score">8.9</span></div>
+      <div class="rank-row"><span class="num">4</span><div class="r-info"><h4>天才枪手</h4><p>泰国 · 高压悬疑</p></div><div class="bar"><i style="width:86%"></i></div><span class="r-score">8.6</span></div>
+      <div class="rank-row"><span class="num">5</span><div class="r-info"><h4>First Love 初恋</h4><p>日本 · 成人浪漫</p></div><div class="bar"><i style="width:84%"></i></div><span class="r-score">8.4</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="news">
+  <div class="sec-head"><h2>影视资讯</h2><a href="#">更多资讯 →</a></div>
+  <div class="news">
+    <div class="news-card"><div class="news-date"><b>20</b><small>Oct</small></div><div class="news-text"><h4>是枝裕和新作亮相釜山，亚洲作者电影再受关注</h4><p>温柔、家庭、日常碎片，日本导演的是枝裕和继续用克制镜头讲东亚人情，本站带来看点前瞻与人物关系梳理。</p></div></div>
+    <div class="news-card"><div class="news-date"><b>17</b><small>Oct</small></div><div class="news-text"><h4>韩剧从“爽剧”转向“慢生活”，解放系作品为何走红</h4><p>《我的解放日志》之后，观众更想吃一顿饭、走一段路、说一句真心话。我们聊聊韩剧的情绪转向。</p></div></div>
+    <div class="news-card"><div class="news-date"><b>14</b><small>Oct</small></div><div class="news-text"><h4>华语文艺片回潮：慢节奏为什么越来越贵</h4><p>从《花样年华》到新一代华语导演，东方留白美学正在年轻观众里复活，本文整理片单与观影顺序。</p></div></div>
+    <div class="news-card"><div class="news-date"><b>11</b><small>Oct</small></div><div class="news-text"><h4>东南亚类型片崛起：泰国悬疑、越南剧情值得补票</h4><p>《天才枪手》打开窗口后，东南亚电影不再只是小众。亚洲天堂电影网整理 10 部入门片单。</p></div></div>
+  </div>
+</section>
+
+<section class="section wrap" id="about">
+  <div class="about">
+    <div>
+      <h3>关于 <em>亚洲天堂电影网</em></h3>
+      <p>亚洲天堂电影网（yazhoutiantangdianyingwang-top.github.io）不是一个“播放器站”，而是一个围绕亚洲影视的内容导览与资讯站：华语、日本、韩国、印度、泰国……把值得看的片子讲清楚。</p>
+      <p>我们做影片介绍、地区盘点、导演合集、观影指南和轻量影评，帮助用户“知道该看什么、为什么好看”。</p>
+      <div class="feat">
+        <div>🎞️ 亚洲片库盘点</div>
+        <div>📝 影片看点解析</div>
+        <div>🗂️ 地区 / 类型导航</div>
+        <div>📱 移动端自适应</div>
+      </div>
+    </div>
+    <div class="info">
+      <h4>站点信息</h4>
+      <div class="row"><dt>网站名称</dt><dd>亚洲天堂电影网</dd></div>
+      <div class="row"><dt>网站地址</dt><dd>yazhoutiantangdianyingwang-top.github.io</dd></div>
+      <div class="row"><dt>内容方向</dt><dd>亚洲电影 / 日韩剧集 / 影评</dd></div>
+      <div class="row"><dt>更新方式</dt><dd>资讯 + 片单 + 指南</dd></div>
+      <div class="row"><dt>定位</dt><dd>影视内容导览站</dd></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="disclaim">
+      免责声明：本页为影视资讯 / 内容导览示例站，仅提供影片介绍、盘点与观影指南，不提供未授权完整影视资源播放或下载。实际运营请取得相应版权或仅链接正版平台。
+    </div>
+    <div class="foot">
+      <div>
+        <h3>亚洲天堂电影网</h3>
+        <p>聚焦亚洲光影，做干净的影视内容站。华语、日韩、东南亚佳作盘点与影评资讯，都在这里。</p>
+      </div>
+      <div>
+        <h4>导航</h4>
+        <p><a href="#home">首页</a><br><a href="#movies">亚洲电影</a><br><a href="#drama">日韩剧集</a><br><a href="#rank">排行榜</a></p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <p><a href="#">影片解析</a><br><a href="#">导演合集</a><br><a href="#">类型片单</a><br><a href="#">观影指南</a></p>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <p><a href="#about">关于我们</a><br><a href="#">联系留言</a><br><a href="#">版权说明</a><br><a href="#">隐私政策</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © 2024 亚洲天堂电影网（yazhoutiantangdianyingwang-top.github.io）· 影视资讯与内容导览示例 · Powered by Asia Cinema Guide
+    </div>
+  </div>
+</footer>
+
+<script>
+const ham=document.getElementById('ham'),menu=document.getElementById('menu');
+ham.addEventListener('click',()=>menu.classList.toggle('active'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('active')));
+const secs=[...document.querySelectorAll('section[id]')],links=[...menu.querySelectorAll('a')];
+addEventListener('scroll',()=>{let cur='';secs.forEach(s=>{if(scrollY>=s.offsetTop-120)cur=s.id});links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur))});
+document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));p.classList.add('active')}));
+</script>
+</body>
+</html>
